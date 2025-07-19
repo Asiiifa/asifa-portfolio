@@ -11,9 +11,6 @@ Built with **HTML**, **TailwindCSS**, and **JavaScript**, it showcases my:
 - 📄 Resume download option
 
 ## 🔗 Live Demo
-👉 [Click to view my portfolio](https://yourusername.github.io/asifa-portfolio)
-
-## 📁 Project Structure
 
 
 ## 📦 Tech Stack
