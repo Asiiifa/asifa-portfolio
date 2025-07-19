@@ -23,7 +23,7 @@ Built with **HTML**, **TailwindCSS**, and **JavaScript**, it showcases my:
 
 ## 📄 Resume
 My resume is downloadable from the site or directly here:  
-[aatkacv.pdf](aatkacv.pdf)
+[aatkacv.pdf](aatkacv.pdf.pdf)
 
 ## 📬 Contact Me
 
