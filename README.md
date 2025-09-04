@@ -40,8 +40,8 @@ If you have any questions or suggestions, open an issue or reach out directly.
 ## Contact
 
 - **GitHub:** [Asiiifa](https://github.com/Asiiifa)
-- **Email:** [your-email@example.com] (replace with your email)
-- **LinkedIn:** [Your LinkedIn Profile] (optional)
+- **Email:** asifayusafzai@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/asifa-hamid-aiml/
 
 ---
 
