@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f1f5f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <title>Asifa Hamid Khan | Software Engineer Portfolio</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- FontAwesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light">
+  <!-- Mobile Navigation Toggle -->
+  <button id="mobile-menu-toggle" class="md:hidden fixed top-4 left-4 z-50 bg-white dark:bg-gray-800 p-2 rounded-lg shadow-lg">
+    <i class="fas fa-bars text-gray-800 dark:text-white"></i>
+</button>
+
+  <!-- Top Navigation Bar -->
+  <header class="fixed top-0 left-0 w-full bg-white dark:bg-[#161b22] shadow-md z-40 transition-all duration-300">
+    <div class="container mx-auto flex justify-between items-center px-4 py-3">
+      <h1 class="text-xl md:text-2xl font-bold text-gray-800 dark:text-white">Asifa</h1>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6 text-base">
+        <a href="#about" class="nav-link group">
+          <i class="fas fa-user group-hover:animate-bounce"></i>
+          <span>About</span>
+        </a>
+        <a href="#skills" class="nav-link group">
+          <i class="fas fa-lightbulb group-hover:animate-bounce"></i>
+          <span>Skills</span>
+        </a>
+        <a href="#projects" class="nav-link group">
+          <i class="fas fa-code group-hover:animate-bounce"></i>
+          <span>Projects</span>
+        </a>
+        <a href="#education" class="nav-link group">
+          <i class="fas fa-graduation-cap group-hover:animate-bounce"></i>
+          <span>Education</span>
+        </a>
+        <a href="#achievements" class="nav-link group">
+          <i class="fas fa-trophy group-hover:animate-bounce"></i>
+          <span>Achievements</span>
+        </a>
+        <a href="#contact" class="nav-link group">
+          <i class="fas fa-envelope group-hover:animate-bounce"></i>
+          <span>Contact</span>
+        </a>
+        <a href="asifa cv13.pdf" target="_blank" class="nav-link group">
+          <i class="fas fa-file-pdf group-hover:animate-bounce"></i>
+          <span>Resume</span>
+        </a>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-toggle-btn">
+    <i class="fas fa-moon" id="icon-moon"></i>
+    <i class="fas fa-sun hidden" id="icon-sun"></i>
+  </button>
+      </nav>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-[#161b22] border-t border-gray-200 dark:border-gray-700">
+      <nav class="flex flex-col space-y-2 p-4">
+        <a href="#about" class="mobile-nav-link">
+          <i class="fas fa-user"></i>
+          <span>About</span>
+        </a>
+        <a href="#skills" class="mobile-nav-link">
+          <i class="fas fa-lightbulb"></i>
+          <span>Skills</span>
+        </a>
+        <a href="#projects" class="mobile-nav-link">
+          <i class="fas fa-code"></i>
+          <span>Projects</span>
+        </a>
+        <a href="#education" class="mobile-nav-link">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Education</span>
+        </a>
+        <a href="#achievements" class="mobile-nav-link">
+          <i class="fas fa-trophy"></i>
+          <span>Achievements</span>
+        </a>
+        <a href="#contact" class="mobile-nav-link">
+          <i class="fas fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+        <a href="asifa cv13.pdf" target="_blank" class="mobile-nav-link">
+          <i class="fas fa-file-pdf"></i>
+          <span>Resume</span>
+        </a>
+        
+        <!-- Mobile Theme Toggle Button -->
+        <button id="mobile-theme-toggle" aria-label="Toggle Dark Mode" class="mobile-theme-toggle-btn">
+          <i class="fas fa-moon" id="mobile-icon-moon"></i>
+          <i class="fas fa-sun hidden" id="mobile-icon-sun"></i>
+          <span>Toggle Theme</span>
+        </button>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 bg-gray-100 dark:bg-[#0d1117]">
+  <!-- Profile Image -->
+    <img src="asifa.png.jpg" alt="Asifa Hamid Khan" 
+         class="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full object-cover shadow-lg mb-6 border-4 border-white dark:border-gray-700" />
+
+  <!-- Name -->
+    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-3">
+    Hi, I'm Asifa Hamid Khan
+  </h1>
+
+  <!-- Tagline -->
+    <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6">
+    A passionate Software Engineer
+  </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#projects" class="btn-primary">
+        <i class="fas fa-code mr-2"></i>
+        View My Work
+      </a>
+      <a href="asifa cv13.pdf" target="_blank" class="btn-secondary">
+        <i class="fas fa-download mr-2"></i>
+        Download Resume
+      </a>
+    </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 sm:px-6 max-w-4xl mx-auto" data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p class="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+      I'm an aspiring software engineer with a deep interest in building creative and impactful software solutions. My journey in technology began with a fascination for coding, and it has since evolved into a passion for artificial intelligence and machine learning. I thrive on challenges and enjoy learning new technologies to enhance my skills. Whether it's developing web applications or exploring AI algorithms, I am committed to continuous growth in the tech field.  
+      I focus on creativity, performance, and user experience, enjoying turning ideas into real-world projects.
+    </p>
+    </div>
+    </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4 sm:px-6 bg-gray-100 dark:bg-[#161b22]" data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+      
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <h3 class="project-title">QuickEntry – Visitor Log App</h3>
+        <p class="project-date">May 27 – June 27, 2025</p>
+        <p class="project-description">Built a Python desktop app with Tkinter, auto Time In/Out, admin login, live search, and CSV export.</p>
+        <a href="https://github.com/Asiiifa/quick-entry-app" target="_blank" class="project-link">
+          <i class="fab fa-github mr-2"></i>
+        GitHub Repository
+      </a>
+    </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <h3 class="project-title">Stock Market, Spam & Fraud Detection</h3>
+        <p class="project-date">April 2 – April 25, 2025</p>
+        <p class="project-description">Built ML models for stock trends, spam filtering (NLTK), and credit card fraud detection using Scikit-learn.</p>
+        <a href="https://github.com/Asiiifa/creditcard" target="_blank" class="project-link">
+          <i class="fab fa-github mr-2"></i>
+        GitHub Repository
+      </a>
+    </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <h3 class="project-title">Internship Projects (Internpe)</h3>
+        <p class="project-date">July 1 – August 2, 2024</p>
+        <p class="project-description">Built Snake Game, Digital Clock & Tic-Tac-Toe using Python GUI with core logic and animations.</p>
+        <a href="https://github.com/Asiiifa/snake-game" target="_blank" class="project-link">
+          <i class="fab fa-github mr-2"></i>
+        GitHub Repository
+      </a>
+    </div>
+
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <h3 class="project-title">Script2Toon (Ongoing)</h3>
+        <p class="project-date">AI-Powered Story Generator</p>
+        <p class="project-description">Transforms stories into animation, comic pages & games. React + FastAPI, doodle UI, scalable backend.</p>
+        <a href="https://github.com/Asiiifa" target="_blank" class="project-link">
+          <i class="fab fa-github mr-2"></i>
+        GitHub Repository
+      </a>
+    </div>
+
+      <!-- Project Card 5 -->
+      <div class="project-card">
+        <h3 class="project-title">CelestiaCode (Ongoing)</h3>
+        <p class="project-date">Python + Flutter + AI</p>
+        <p class="project-description">Code assistant with celestial design. Features AI code generation, black & white doodle UI, mobile-first design.</p>
+        <a href="https://github.com/Asiiifa" target="_blank" class="project-link">
+          <i class="fab fa-github mr-2"></i>
+        GitHub Repository
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills Section -->
+  <section id="skills" class="py-16 px-4 sm:px-6 bg-white dark:bg-gray-900" data-aos="fade-up">
+     <h2 class="section-title">Skills</h2>  
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    
+    <!-- Languages -->
+      <div class="skill-card">
+        <h3 class="skill-title">Languages</h3>
+        <div class="skill-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+      </div>
+    </div>
+
+      <!-- Web Development -->
+      <div class="skill-card">
+        <h3 class="skill-title">Web Development</h3>
+        <div class="skill-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
+          <img src="https://img.icons8.com/ios-filled/50/wordpress.png" alt="WordPress" class="skill-icon">
+      </div>
+    </div>
+
+    <!-- Libraries & ML -->
+      <div class="skill-card">
+        <h3 class="skill-title">Libraries & ML</h3>
+        <div class="skill-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" class="skill-icon">
+          <img src="https://scikit-learn.org/stable/_images/scikit-learn-logo-small.png" alt="Scikit-learn" class="skill-icon">
+          <img src="https://www.nltk.org/_static/nltk_logo.png" alt="NLTK" class="skill-icon">
+      </div>
+    </div>
+
+      <!-- Tools & GUI -->
+      <div class="skill-card">
+        <h3 class="skill-title">Tools & GUI</h3>
+        <div class="skill-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+          <img src="https://img.icons8.com/color/48/google-colab.png" alt="Colab" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" class="skill-icon">
+          <img src="https://img.icons8.com/color/48/cursor.png" alt="Cursor AI" class="skill-icon">
+          <span style="display: inline-block; width: 2rem; height: 2rem; background: #0366d6; color: white; border-radius: 4px; text-align: center; line-height: 2rem; font-weight: bold; font-size: 0.8rem;" title="Tkinter">TK</span>
+      </div>
+    </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card">
+        <h3 class="skill-title">Soft Skills</h3>
+        <div class="grid grid-cols-2 gap-3 text-sm">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-comments text-blue-500"></i>
+      <span>Communication</span>
+    </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-users text-green-500"></i>
+      <span>Teamwork</span>
+    </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-random text-purple-500"></i>
+      <span>Flexibility</span>
+    </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-eye text-yellow-500"></i>
+      <span>Attention to Detail</span>
+    </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-tasks text-red-500"></i>
+      <span>Multitasking</span>
+    </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-user-check text-pink-500"></i>
+      <span>Dependability</span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-16 px-4 sm:px-6 max-w-4xl mx-auto" data-aos="fade-up">
+    <h2 class="section-title">Education</h2>
+    <div class="space-y-6">
+      <div class="card">
+        <h3 class="project-title">B.Tech, Computer Science (AI/ML)</h3>
+        <p class="text-gray-600 dark:text-gray-400">Dr. A.P.J Abdul Kalam Technical University | June 2023 – June 2026</p>
+      </div>
+      <div class="card">
+        <h3 class="project-title">Diploma, Computer Science Engineering</h3>
+        <p class="text-gray-600 dark:text-gray-400">Polytechnic - Arunachal University of Studies | June 2020 – June 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-16 px-4 sm:px-6 bg-gray-100 dark:bg-[#161b22]" data-aos="fade-up">
+    <h2 class="section-title">Achievements</h2>
+    <div class="card max-w-3xl mx-auto">
+      <ul class="list-disc list-inside space-y-2 text-base sm:text-lg text-gray-700 dark:text-gray-300">
+      <li>AWS Certified Academy Cloud Foundation</li>
+      <li>Forage Virtual Job Simulation – AWS Solutions Architect</li>
+      <li>Data Structures & Algorithms in C++</li>
+      <li>Certified in DBMS & Microsoft Fabric SQL</li>
+      <li>Internpe Internship (Python & GUI Development)</li>
+      <li>Girlscript Summer of Code (Contributor)</li>
+      <li>Social Media Head – GeeksforGeeks Student Chapter, ITSEC</li>
+    </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 sm:px-6 max-w-4xl mx-auto" data-aos="fade-up">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+      <div class="flex justify-center gap-8 text-3xl sm:text-4xl text-gray-600 dark:text-gray-300">
+        <a href="https://github.com/Asiiifa" target="_blank" aria-label="GitHub" class="contact-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:Asifayusafzai@gmail.com" aria-label="Email" class="contact-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/asifa-hamid-aiml" target="_blank" aria-label="LinkedIn" class="contact-link">
+          <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-4 text-center text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700">
+    <p>&copy; 2025 Asifa Hamid Khan. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="java.js"></script>
+</body>
+</html>
+
+
+
+
+
+  
+
+
+
+
+
