@@ -7,6 +7,11 @@ Here, you'll find a showcase of my skills, projects, and professional journey as
 
 Hi, I'm Asiiifa—a passionate developer specializing in data science, web development, and creative problem solving. I love building applications that make a difference and exploring new technologies.
 
+## Live Portfolio
+
+👉 **View my live portfolio here:**  
+[https://asiiifa.github.io/asifa-portfolio/](https://asiiifa.github.io/asifa-portfolio/)
+
 ## Projects
 
 This portfolio highlights some of my best work, including:
